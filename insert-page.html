@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Insert Item Record</title>
+</head>
+<center>
+<body>
+
+<div data-role="page" id="page">
+	<div data-role="header" data-theme="b">
+		<h1>Insert Item Record</h1>
+	</div>
+    
+    <div data-role="main" class="ui-content">
+	<form name="form1" method="post" action="insert-page.php">
+      <div class="ui-field-contain">
+   
+      <label for="ITcat"> Category :</label>
+    <select name="ITcatLIST" required>
+    <option value="" disabled selected>Please Select</option>
+    	<option value="all">All</option>
+        <option value="atv">ATV</option>
+        <option value="minicross">Mini-Cross</option>
+        <option value="pocketbike">Pocket Bike</option>
+        
+    </select>
+      <br /> <br />
+      
+        <label for="ITconLIST"> Item Condition :</label>
+     <select name="ITconLIST" required>
+      <option value="" disabled selected>Please Select</option>
+    	<option value="New">New</option>
+        <option value="Used">Used</option>
+        <option value="Secondhand">Secondhand</option>
+       
+    </select>
+     <br /> <br />
+     
+      <label for="ITid"> ID :</label>
+      <input type="number" name="txtITid" id="ITid" required> 
+     
+       <label for="ITnmitem"> Item Type :</label>
+      <input type="text" name="txtITnmitem" id="ITnmitem" required> 
+ 
+      <label for="ITcolor"> Colour :</label>
+      <input type="text" name="txtITcolor" id="ITcolor" required>
+ 
+      <label for="ITquantity"> Quantity :</label>
+      <input type="number" name="txtITquantity" id="ITquantity" /> 
+
+		<input type="submit" data-inline="true" value="Submit">
+      </form>
+      <form action="login-page.php" method="post"><br />
+      <input name="" type="submit" value="Home Page" />
+      </form>	
+	</div>
+
+</body>
+</center>
+</html>
